@@ -18,9 +18,10 @@ class Grid:
 		#		index = index + 1
 	
 	def getBlock ( self, positionVector ) :
-		if(positionVector.all() < 25):
-			x = int(positionVector.item(0))
-			y = int(positionVector.item(1))
-			return self.blocks[(x*self.size) + y]
 		
+		x = int(positionVector.item(0))
+		y = int(positionVector.item(1))
+		if(((x*self.size) + y) < len(self.blocks) - 100 ):
+			return self.blocks[(x*self.size) + y]
+	
 		return self.blocks[0]

@@ -4,8 +4,8 @@ class Particle:
 	'represents a particle'
 	
 	position = np.array([ 0 , 0 ])
-	velocity = np.array([ 0 , 0 ])
-	charge = 1.
+	velocity = np.array([ 0. , 0. ])
+	charge = 10.
 	mass = 1.
 	
 	def __init__ ( self, xPosition , yPosition , xVelocity , yVelocity ):
